@@ -1,0 +1,32 @@
+{
+  "name": "tadmastertests",
+  "version": "1.0.0",
+  "description": "a test suite using testcafe for TADMaster",
+  "main": "index.js",
+  "scripts": {
+    "test-chrome": "testcafe chrome Tests/ -e",
+    "test-chrome-headless": "testcafe chrome:headless Tests/ -e",
+    "test-ie": "testcafe ie Tests/ -e",
+    "test-edge": "testcafe edge Tests/ -e",
+    "test-firefox": "testcafe firefox Tests/ -e",
+    "test-firefox-headless": "testcafe firefox:headless Tests/ -e",
+    "test": "npm run test-chrome && npm run test-ie && npm run test-edge && npm run test-firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattieFM/TADMasterTests.git"
+  },
+  "author": "MattieFM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattieFM/TADMasterTests/issues"
+  },
+  "homepage": "https://github.com/mattieFM/TADMasterTests#readme",
+  "devDependencies": {
+    "testcafe": "^3.5.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
+  }
+}
