@@ -35,4 +35,4 @@ test('TADMaster PipeLine', async t => {
     await queuePage.isOnPage();
     //expect page to load within 5 min
     await visualizePage.isOnPage(300e3);
-}).only;
+});
